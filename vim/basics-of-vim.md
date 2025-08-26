@@ -1,4 +1,4 @@
-<iframe width="560" height="315" src="https://youtu.be/6tsuMWAarqo" frameborder="0" allowfullscreen></iframe>
+This is the writter version of [this video on YouTube](https://youtu.be/6tsuMWAarqo).
 
 Yes, you read that correctly. I will teach you a few basic Vim motions.
 
