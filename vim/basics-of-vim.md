@@ -3,7 +3,7 @@
 </a>
 
 ```Info
-This document is a transcription of the YouTube video, for those of you who prefer reading.
+This document is a writter version of the YouTube video above, for those of you who prefer reading.
 ```
 
 Yes, you read that correctly. I will teach you a few basic Vim motions.
