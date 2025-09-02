@@ -1,4 +1,6 @@
-This is the writter version of [this video on YouTube](https://youtu.be/6tsuMWAarqo).
+<a href="https://youtu.be/6tsuMWAarqo">
+  <img src="thumbnails/vim basics github thumbnail.jpg" alt="Vim Basics YouTube Video Thumbnail">
+</a>
 
 Yes, you read that correctly. I will teach you a few basic Vim motions.
 
