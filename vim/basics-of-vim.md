@@ -2,6 +2,10 @@
   <img src="thumbnails/vim basics github thumbnail.jpg" alt="Vim Basics YouTube Video Thumbnail">
 </a>
 
+```Info
+This document is a transcription of the YouTube video, for those of you who prefer reading.
+```
+
 Yes, you read that correctly. I will teach you a few basic Vim motions.
 
 Soon you’ll be a regular Vim fanboy, and hey, with your newly found skills, who knows, you might even finally get a girlfriend.
