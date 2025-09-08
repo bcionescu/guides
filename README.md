@@ -2,4 +2,4 @@ Over on my [YouTube channel](https://youtube.com/@bcionescu) I create video guid
 
 ## Vim
 - [Basics of Vim](vim/basics-of-vim.md)
-- [Vim tips doctors don't want you to know](vim//vim tips doctors don't want you to know.md)
+- [Vim tips doctors don't want you to know](vim/vim tips doctors don't want you to know.md)
