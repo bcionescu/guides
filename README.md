@@ -7,3 +7,4 @@ Over on my [YouTube channel](https://youtube.com/@bcionescu) I create video guid
 ## Backups
 
 - [Borg Automation](backups/borg-automation.md)
+- [Raspberry Pi with Syncthing](backups/raspberrypi-syncthing.md)
