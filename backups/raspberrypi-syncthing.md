@@ -14,7 +14,7 @@ Each device has a unique ID, and Syncthing's relay system tracks IP changes, ens
 
 In terms of OS, I wanted something as lightweight as possible, as I will be running it on my Raspberry Pi 5. In reality, I'm underusing the hardware. Here is what `htop` looked like during a sync.
 
-![htop during sync](/images/htop-during-sync.png)
+![htop during sync](/backups/images/htop-during-sync.png)
 
 First, as I am on macOS, I installed the Raspberry Pi Imager via `brew` with the following command:
 
@@ -24,7 +24,7 @@ brew install --cask raspberry-pi-imager
 
 I selected my Raspberry Pi model, `Raspberry Pi OS Lite` as the Operating System, and picked a microSD card as the device to image. Then I hit `Cmd + Shift + X` to bring up the hidden options.
 
-![Hidden options in Raspberry Pi Imager](/images/hidden_options.png)
+![Hidden options in Raspberry Pi Imager](/backups/images/hidden_options.png)
 This allowed me to configure a few things, such as giving it my WiFi credentials and setting up SSH. This way, I was able to remote in to it immediately after it booted.
 
 ## Storage
@@ -33,7 +33,7 @@ Before we proceed to the next step, I'd like to discuss storage. The OS itself r
 
 I had a spare 4TB Crucial SSD lying around from an older project, and fortunately, my Raspberry Pi was able to detect and use it. Some SSD models do not work with Raspberry Pis, so I got lucky.
 
-![GeeekPi Argon Neo 5 M.2 SSD slot](/images/raspberry-pi-case-m2-ssd.jpg)
+![GeeekPi Argon Neo 5 M.2 SSD slot](/backups/images/raspberry-pi-case-m2-ssd.jpg)
 
 In terms of the case, I'm using the GeeekPi Argon Neo 5, which comes with a cooler, as well as an M.2 slot—sweet! Also, it looks like something the Empire would build, does it not?
 
@@ -79,13 +79,13 @@ ssh -L 8385:localhost:8384 pi@raspberrypi.local
 
 Now, on your main machine, if you go to `http://localhost:8384`, you'll see the GUI for the local Syncthing instance. If you then open a new tab and go to `http://localhost:8385`, you'll see the GUI for the Raspberry Pi instance.
 
-![two instances of Syncthing on the same machine via SSH Port Forwarding](/images/final-side-by-side.png)
+![two instances of Syncthing on the same machine via SSH Port Forwarding](/backups/images/final-side-by-side.png)
 
 ## Connect the machines
 
 Now that we have Syncthing running on both machines, it's time to connect them. If you go on your main machine, you'll see an `Add Remote Device` in the bottom right, in Syncthing.
 
-![syncthing find remote device](/images/find_device.png)
+![syncthing find remote device](/backups/images/find_device.png)
 
 Once you click it, it should immediately locate the other instance, provided both devices are connected to the same network. Before you connect them, go to the Raspberry Pi instance, click on `Actions`, in the top right, and then click `Show ID`. This will allow you to confirm the unique ID of your Raspberry Pi instance.
 
@@ -93,7 +93,7 @@ If they match, invite the other instance to sync with you. Ensure you give it a 
 
 Once this is done, go to the other instance and confirm the invitation.
 
-![syncthing confirm connection to remote device](/images/connect_device.png)
+![syncthing confirm connection to remote device](/backups/images/connect_device.png)
 
 ## Encryption
 
@@ -105,7 +105,7 @@ I want something reliable that will reboot and resume operation as quickly as po
 
 Ultimately, I reached a compromise. I use `borgbackup` for my backups. Not only is it space-efficient, as it utilizes deduplication, but it's also encrypted. This means that I could store the backup files in plain text, and it would not be a problem, as their actual contents are encrypted.
 
-If you're curious how I use `borgbackup`, feel free to check out my [guide](https://github.com/bcionescu/borg-automation).
+If you're curious how I use `borgbackup`, feel free to check out my [guide](borg-automation.md).
 
 Even so, in the end, I still decided to encrypt the SSD with LUKS. We'll go over how to do that in a sec. This means that if there is a power cut, I can SSH into the Raspberry Pi, unlock the SSD, and then mount it.
 
@@ -184,7 +184,7 @@ sudo cryptsetup close borg
 
 I went ahead and shared the directory from my main machine, accepted it on the Raspberry Pi, and added the path. Since I'm saving it to my `borg` mount, my path was simply `/mnt/borg`.
 
-![syncthing mount path](/images/select_location.png)
+![syncthing mount path](/backup/images/select_location.png)
 
 Depending on the size of the sync, it may take a little while to initialize, but once it does, you're off and running.
 
