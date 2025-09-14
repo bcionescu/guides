@@ -184,7 +184,7 @@ sudo cryptsetup close borg
 
 I went ahead and shared the directory from my main machine, accepted it on the Raspberry Pi, and added the path. Since I'm saving it to my `borg` mount, my path was simply `/mnt/borg`.
 
-![syncthing mount path](/backup/images/select_location.png)
+![syncthing mount path](/backups/images/select_location.png)
 
 Depending on the size of the sync, it may take a little while to initialize, but once it does, you're off and running.
 
