@@ -1,6 +1,6 @@
 # Syncthing with Raspberry Pi 5
 
-![Raspberry Pi 5 with GeeekPi Argon Neo 5 case](/images/raspberry-pi-inside-case.JPG)
+![Raspberry Pi 5 with GeeekPi Argon Neo 5 case](backups/images/raspberry-pi-inside-case.JPG)
 
 I love backups. Whenever I create a project, I can make copies of it and store said copies in multiple locations, so that, in the event of data loss, I can still recover everything.
 
