@@ -18,9 +18,9 @@ Hitting `/` is useful for forward searching. If you want to search back in the t
 
 This is something you will use literally all the time, as it not only allows you to search through text, but it also allows you to jump to certain words really fast, as you do not have to even fully type out the word, to get to it.
 
-## Motion: c
+## Command: c
 
-Now that we’ve got that out of the way, I want to introduce you to a motion which you will use all the time, the `c`, or `change` motion.
+Now that we’ve got that out of the way, I want to introduce you to a command which you will use all the time, the `c`, or `change` command.
 
 If you recall from the last tutorial, I introduced you to `d`, or `delete`.
 
