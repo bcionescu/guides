@@ -5,6 +5,9 @@ Over on my [YouTube channel](https://youtube.com/@bcionescu) I create video guid
 - [Vim tips doctors don't want you to know](vim/vim-tips-doctors-don't-want-you-to-know.md)
 - [time to consoom more based vim tips and tricks](vim/time-to-consoom-more-based-vim-tips-and-tricks.md)
 
+## Utils
+- [This Is Your Sign to Finally Learn Grep](utils/this-is-your-sign-to-finally-learn-grep.md)
+
 ## Backups
 
 - [Borg Automation](backups/borg-automation.md)
