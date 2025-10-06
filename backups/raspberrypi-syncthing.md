@@ -2,6 +2,10 @@
 
 ![Raspberry Pi 5 with GeeekPi Argon Neo 5 case](/backups/images/raspberry-pi-inside-case.JPG)
 
+```
+DISCLAIMER: I take no responsibility for any potential security issues, or data loss. Please do your own research when implementing any guide.
+```
+
 I love backups. Whenever I create a project, I can make copies of it and store said copies in multiple locations, so that, in the event of data loss, I can still recover everything.
 
 There are basic things you can do, such as using a cloud service and maintaining local backups; however, it would be preferable to have backups on a remote device that I control and manage.
