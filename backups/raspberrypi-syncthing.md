@@ -3,7 +3,8 @@
 ![Raspberry Pi 5 with GeeekPi Argon Neo 5 case](/backups/images/raspberry-pi-inside-case.JPG)
 
 ```
-DISCLAIMER: I take no responsibility for any potential security issues, or data loss. Please do your own research when implementing any guide.
+DISCLAIMER: I take no responsibility for any potential security issues, or data loss.
+Please do your own research when implementing any guide.
 ```
 
 I love backups. Whenever I create a project, I can make copies of it and store said copies in multiple locations, so that, in the event of data loss, I can still recover everything.
